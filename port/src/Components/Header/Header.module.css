@@ -1,0 +1,18 @@
+header {
+  top: 0;
+  background-color: black;
+  position: fixed !important;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  opacity: 0.95;
+  box-shadow: 0 10px 10px 0 rgba(9, 5, 29, 0.171) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
+  background: #00b3a4;
+    background: linear-gradient(270deg,#00b3a4,#000);
+    background: -webkit-linear-gradient(270deg,#00b3a4,#000);
+}
+.cont {
+  margin-left: 55%;
+}

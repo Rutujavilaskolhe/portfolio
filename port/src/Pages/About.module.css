@@ -1,0 +1,259 @@
+/* Reset CSS */
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.service {
+  padding: 50px 0;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+.aboutHeading {
+  /* margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem; */
+
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.aboutContainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 20px;
+
+  /* display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+}
+.aboutContentContainer {
+  padding: 0 0 10px 25px;
+  margin-top: -2px;
+  position: relative;
+  /* display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center; */
+}
+.p {
+  padding: 20px;
+}
+h5 ul li {
+  border-left: 2px solid #14ffec;
+}
+ul li {
+  list-style: none;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.intro {
+  padding-right: 80px !important;
+}
+.eduHeading {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.eduBtech {
+  padding: 0 0 10px 25px;
+  margin-top: -5px;
+ 
+  border-left: 2px solid #14ffec;
+}
+.eduCollege {
+  padding: 0 0 10px 25px;
+  margin-top: -5px;
+  border-left: 2px solid #14ffec;
+}
+.eduSchool {
+  padding: 0 0 10px 25px;
+  margin-top: -5px;
+  border-left: 2px solid #14ffec;
+}
+ul li {
+  
+  margin: -5px;
+  text-align: justify;
+}
+li{
+
+  margin-left: 40px !important;
+}
+h5 {
+  line-height: 18px;
+  font-size: 1em;
+  background: #009d90;
+  padding: 8px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 20px;
+}
+em {
+  margin-left: 70px;
+  font-style: italic;
+}
+.aboutPara {
+  font-size: 1.2em;
+  margin: 30px;
+  text-align: left;
+}
+
+.max {
+  max-width: 1300px;
+  margin: 50px;
+  padding: 0 20px; /* Added padding to control content width */
+}
+.skillHeading {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.max h1 {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.max h1::after {
+  position: absolute;
+  background: #fff;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
+
+.content {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 15px;
+}
+
+.card {
+  margin-right: 30px;
+  flex: 1; /* Make each card take up equal horizontal space */
+  padding: 20px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  background: #000;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 5px 3px #008a7e !important;
+  transition: border 0.2s ease-out;
+  color: black;
+}
+
+.card:hover .icon {
+  font-size: 80px;
+  color: rgb(67, 211, 211);
+}
+
+.icon {
+  font-size: 80px;
+}
+
+.box {
+  transition: all 0.2s ease;
+}
+
+.card:hover .box {
+  transform: scale(1.05);
+}
+
+.box {
+  font-size: 30px;
+  transition: color 0.2s ease;
+}
+@media (min-width: 768px) {
+  .intro {
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+  .content {
+    margin: 20px 0; /* Adjusted margin to center the content */
+
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Expand cards to full width on smaller screens */
+  }
+}
+@media screen and (max-width: 900px) {
+  .max h1 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+
+  .content {
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    border: 2px solid #fff;
+    background: #000;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 3px transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    position: relative;
+    transform-origin: center center;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 5px 3px #008a7e !important;
+    color: black;
+  }
+
+  .card:hover .icon {
+    font-size: 60px;
+    color: rgb(67, 211, 211);
+  }
+}
